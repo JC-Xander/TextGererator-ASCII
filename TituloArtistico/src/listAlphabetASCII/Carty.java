@@ -1,7 +1,6 @@
 package listAlphabetASCII;
 
 import baseStructures.ASCIICharacter;
-import baseStructures.ASCIICharacterNotFound;
 import baseStructures.ASCIIAlphabet;
 
 /**
@@ -21,10 +20,69 @@ public class Carty extends ASCIIAlphabet {
 	 * ascedente segun el valor numerico de cada char en el codigo ASCII.
 	 */
 	public Carty() {
-		this.ASCIIAlphabet = new ASCIICharacter[67];
-		this.numberOfRows = 8;
+		this.ASCIIAlphabet = new ASCIICharacter[76];
+		
+		this.ASCIIAlphabet[0] = new ASCIICharacter('\t', """
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░
+				░░░░░░░░""");
 
-		this.ASCIIAlphabet[0] = new ASCIICharacter('-', """
+		this.ASCIIAlphabet[1] = new ASCIICharacter(' ', """
+				░░
+				░░
+				░░
+				░░
+				░░
+				░░
+				░░
+				░░""");
+
+		this.ASCIIAlphabet[2] = new ASCIICharacter('!', """
+				╔╗░
+				║║░
+				║║░
+				╚╝░
+				╔╗░
+				╚╝░
+				░░░
+				░░░""");
+
+		this.ASCIIAlphabet[3] = new ASCIICharacter('(', """
+				░░╔═╗
+				░╔╝╔╝
+				╔╝╔╝░
+				║║║░░
+				║║║░░
+				╚╗╚╗░
+				░╚╗╚╗
+				░░╚═╝""");
+
+		this.ASCIIAlphabet[4] = new ASCIICharacter(')', """
+				╔═╗░░
+				╚╗╚╗░
+				░╚╗╚╗
+				░░║║║
+				░░║║║
+				░╔╝╔╝
+				╔╝╔╝░
+				╚═╝░░""");
+
+		this.ASCIIAlphabet[5] = new ASCIICharacter(',', """
+				░░
+				░░
+				░░
+				░░
+				╔╗
+				╚╣
+				░╝
+				░░""");
+
+		this.ASCIIAlphabet[6] = new ASCIICharacter('-', """
 				░░░░
 				░░░░
 				░░░░
@@ -34,17 +92,17 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[1] = new ASCIICharacter('.', """
-				░░
-				░░
+		this.ASCIIAlphabet[7] = new ASCIICharacter('.', """
 				░░
 				░░
 				░░
 				░░
 				╔╗
-				╚╝""");
+				╚╝
+				░░
+				░░""");
 
-		this.ASCIIAlphabet[2] = new ASCIICharacter('0', """
+		this.ASCIIAlphabet[8] = new ASCIICharacter('0', """
 				╔═══╗
 				║╔═╗║
 				║║║║║
@@ -54,7 +112,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[3] = new ASCIICharacter('1', """
+		this.ASCIIAlphabet[9] = new ASCIICharacter('1', """
 				░╔╗░
 				╔╝║░
 				╚╗║░
@@ -64,7 +122,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[4] = new ASCIICharacter('2', """
+		this.ASCIIAlphabet[10] = new ASCIICharacter('2', """
 				╔═══╗
 				║╔═╗║
 				╚╝╔╝║
@@ -74,7 +132,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[5] = new ASCIICharacter('3', """
+		this.ASCIIAlphabet[11] = new ASCIICharacter('3', """
 				╔═══╗
 				║╔═╗║
 				╚╝╔╝║
@@ -84,7 +142,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[6] = new ASCIICharacter('4', """
+		this.ASCIIAlphabet[12] = new ASCIICharacter('4', """
 				╔╗─╔╗
 				║║─║║
 				║╚═╝║
@@ -94,7 +152,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[7] = new ASCIICharacter('5', """
+		this.ASCIIAlphabet[13] = new ASCIICharacter('5', """
 				╔═══╗
 				║╔══╝
 				║╚══╗
@@ -104,7 +162,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[8] = new ASCIICharacter('6', """
+		this.ASCIIAlphabet[14] = new ASCIICharacter('6', """
 				╔═══╗
 				║╔══╝
 				║╚══╗
@@ -114,7 +172,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[9] = new ASCIICharacter('7', """
+		this.ASCIIAlphabet[15] = new ASCIICharacter('7', """
 				╔═══╗
 				║╔═╗║
 				╚╝╔╝║
@@ -124,7 +182,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[10] = new ASCIICharacter('8', """
+		this.ASCIIAlphabet[16] = new ASCIICharacter('8', """
 				╔═══╗
 				║╔═╗║
 				║╚═╝║
@@ -134,7 +192,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[11] = new ASCIICharacter('9', """
+		this.ASCIIAlphabet[17] = new ASCIICharacter('9', """
 				╔═══╗
 				║╔═╗║
 				║╚═╝║
@@ -144,7 +202,37 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[12] = new ASCIICharacter('A', """
+		this.ASCIIAlphabet[18] = new ASCIICharacter(':', """
+				░░░░
+				░░░░
+				░╔╗░
+				░╚╝░
+				░╔╗░
+				░╚╝░
+				░░░░
+				░░░░""");
+
+		this.ASCIIAlphabet[19] = new ASCIICharacter(';', """
+				░░░░
+				░░░░
+				░╔╗░
+				░╚╝░
+				░╔╗░
+				░╚╣░
+				░░╝░
+				░░░░""");
+
+		this.ASCIIAlphabet[20] = new ASCIICharacter('?', """
+				╔═══╗
+				║╔═╗║
+				╚╝╔╝║
+				░░║╔╝
+				░░╔╗░
+				░░╚╝░
+				░░░░░
+				░░░░░""");
+
+		this.ASCIIAlphabet[21] = new ASCIICharacter('A', """
 				╔═══╗
 				║╔═╗║
 				║║─║║
@@ -154,7 +242,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[13] = new ASCIICharacter('B', """
+		this.ASCIIAlphabet[22] = new ASCIICharacter('B', """
 				╔══╗
 				║╔╗║
 				║╚╝╚╗
@@ -164,7 +252,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[14] = new ASCIICharacter('C', """
+		this.ASCIIAlphabet[23] = new ASCIICharacter('C', """
 				╔═══╗
 				║╔═╗║
 				║║─╚╝
@@ -174,7 +262,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[15] = new ASCIICharacter('D', """
+		this.ASCIIAlphabet[24] = new ASCIICharacter('D', """
 				╔═══╗
 				╚╗╔╗║
 				░║║║║
@@ -184,7 +272,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[16] = new ASCIICharacter('E', """
+		this.ASCIIAlphabet[25] = new ASCIICharacter('E', """
 				╔═══╗
 				║╔══╝
 				║╚══╗
@@ -194,7 +282,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[17] = new ASCIICharacter('F', """
+		this.ASCIIAlphabet[26] = new ASCIICharacter('F', """
 				╔═══╗
 				║╔══╝
 				║╚══╗
@@ -204,7 +292,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[18] = new ASCIICharacter('G', """
+		this.ASCIIAlphabet[27] = new ASCIICharacter('G', """
 				╔═══╗
 				║╔═╗║
 				║║─╚╝
@@ -214,7 +302,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[19] = new ASCIICharacter('H', """
+		this.ASCIIAlphabet[28] = new ASCIICharacter('H', """
 				╔╗─╔╗
 				║║─║║
 				║╚═╝║
@@ -224,7 +312,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[20] = new ASCIICharacter('I', """
+		this.ASCIIAlphabet[29] = new ASCIICharacter('I', """
 				╔══╗
 				╚╣╠╝
 				░║║░
@@ -234,7 +322,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[21] = new ASCIICharacter('J', """
+		this.ASCIIAlphabet[30] = new ASCIICharacter('J', """
 				░░╔╗
 				░░║║
 				░░║║
@@ -244,7 +332,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[22] = new ASCIICharacter('K', """
+		this.ASCIIAlphabet[31] = new ASCIICharacter('K', """
 				╔╗╔═╗
 				║║║╔╝
 				║╚╝╝
@@ -254,7 +342,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[23] = new ASCIICharacter('L', """
+		this.ASCIIAlphabet[32] = new ASCIICharacter('L', """
 				╔╗░░░
 				║║░░░
 				║║░░░
@@ -264,7 +352,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[24] = new ASCIICharacter('M', """
+		this.ASCIIAlphabet[33] = new ASCIICharacter('M', """
 				╔═╗╔═╗
 				║║╚╝║║
 				║╔╗╔╗║
@@ -274,7 +362,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[25] = new ASCIICharacter('N', """
+		this.ASCIIAlphabet[34] = new ASCIICharacter('N', """
 				╔═╗─╔╗
 				║║╚╗║║
 				║╔╗╚╝║
@@ -284,7 +372,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[26] = new ASCIICharacter('O', """
+		this.ASCIIAlphabet[35] = new ASCIICharacter('O', """
 				╔═══╗
 				║╔═╗║
 				║║─║║
@@ -294,7 +382,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[27] = new ASCIICharacter('P', """
+		this.ASCIIAlphabet[36] = new ASCIICharacter('P', """
 				╔═══╗
 				║╔═╗║
 				║╚═╝║
@@ -304,7 +392,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[28] = new ASCIICharacter('Q', """
+		this.ASCIIAlphabet[37] = new ASCIICharacter('Q', """
 				╔═══╗
 				║╔═╗║
 				║║─║║
@@ -315,7 +403,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[29] = new ASCIICharacter('R', """
+		this.ASCIIAlphabet[38] = new ASCIICharacter('R', """
 				╔═══╗
 				║╔═╗║
 				║╚═╝║
@@ -325,7 +413,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[30] = new ASCIICharacter('S', """
+		this.ASCIIAlphabet[39] = new ASCIICharacter('S', """
 				╔═══╗
 				║╔═╗║
 				║╚══╗
@@ -335,7 +423,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[31] = new ASCIICharacter('T', """
+		this.ASCIIAlphabet[40] = new ASCIICharacter('T', """
 				╔════╗
 				║╔╗╔╗║
 				╚╝║║╚╝
@@ -345,7 +433,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[32] = new ASCIICharacter('U', """
+		this.ASCIIAlphabet[41] = new ASCIICharacter('U', """
 				╔╗─╔╗
 				║║─║║
 				║║─║║
@@ -355,7 +443,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[33] = new ASCIICharacter('V', """
+		this.ASCIIAlphabet[42] = new ASCIICharacter('V', """
 				╔╗──╔╗
 				║╚╗╔╝║
 				╚╗║║╔╝
@@ -365,7 +453,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[34] = new ASCIICharacter('W', """
+		this.ASCIIAlphabet[43] = new ASCIICharacter('W', """
 				╔╗╔╗╔╗
 				║║║║║║
 				║║║║║║
@@ -375,7 +463,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[35] = new ASCIICharacter('X', """
+		this.ASCIIAlphabet[44] = new ASCIICharacter('X', """
 				╔═╗╔═╗
 				╚╗╚╝╔╝
 				░╚╗╔╝░
@@ -385,7 +473,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[36] = new ASCIICharacter('Y', """
+		this.ASCIIAlphabet[45] = new ASCIICharacter('Y', """
 				╔╗──╔╗
 				║╚╗╔╝║
 				╚╗╚╝╔╝
@@ -395,7 +483,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[37] = new ASCIICharacter('Z', """
+		this.ASCIIAlphabet[46] = new ASCIICharacter('Z', """
 				╔════╗
 				╚══╗═║
 				░░╔╝╔╝
@@ -405,7 +493,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[38] = new ASCIICharacter('_', """
+		this.ASCIIAlphabet[47] = new ASCIICharacter('_', """
 				░░░░
 				░░░░
 				░░░░
@@ -416,7 +504,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				""");
 
-		this.ASCIIAlphabet[39] = new ASCIICharacter('a', """
+		this.ASCIIAlphabet[48] = new ASCIICharacter('a', """
 				░░░░
 				░░░░
 				╔══╗
@@ -426,7 +514,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[40] = new ASCIICharacter('b', """
+		this.ASCIIAlphabet[49] = new ASCIICharacter('b', """
 				╔╗░░
 				║║░░
 				║╚═╗
@@ -436,7 +524,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[41] = new ASCIICharacter('c', """
+		this.ASCIIAlphabet[50] = new ASCIICharacter('c', """
 				░░░░
 				░░░░
 				╔══╗
@@ -446,7 +534,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[42] = new ASCIICharacter('d', """
+		this.ASCIIAlphabet[51] = new ASCIICharacter('d', """
 				░░╔╗
 				░░║║
 				╔═╝║
@@ -456,7 +544,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[43] = new ASCIICharacter('e', """
+		this.ASCIIAlphabet[52] = new ASCIICharacter('e', """
 				░░░░
 				░░░░
 				╔══╗
@@ -466,7 +554,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[44] = new ASCIICharacter('f', """
+		this.ASCIIAlphabet[53] = new ASCIICharacter('f', """
 				░╔═╗
 				░║╔╝
 				╔╝╚╗
@@ -476,7 +564,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[45] = new ASCIICharacter('g', """
+		this.ASCIIAlphabet[54] = new ASCIICharacter('g', """
 				░░░░
 				░░░░
 				╔══╗
@@ -486,7 +574,7 @@ public class Carty extends ASCIIAlphabet {
 				╔═╝║
 				╚══╝""");
 
-		this.ASCIIAlphabet[46] = new ASCIICharacter('h', """
+		this.ASCIIAlphabet[55] = new ASCIICharacter('h', """
 				╔╗░░
 				║║░░
 				║╚═╗
@@ -496,7 +584,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[47] = new ASCIICharacter('i', """
+		this.ASCIIAlphabet[56] = new ASCIICharacter('i', """
 				░░
 				░░
 				╔╗
@@ -506,7 +594,7 @@ public class Carty extends ASCIIAlphabet {
 				░░
 				░░""");
 
-		this.ASCIIAlphabet[48] = new ASCIICharacter('j', """
+		this.ASCIIAlphabet[57] = new ASCIICharacter('j', """
 				░░░
 				░╔╗
 				░╚╝
@@ -516,7 +604,7 @@ public class Carty extends ASCIIAlphabet {
 				╔╝║
 				╚═╝""");
 
-		this.ASCIIAlphabet[49] = new ASCIICharacter('k', """
+		this.ASCIIAlphabet[58] = new ASCIICharacter('k', """
 				╔╗░░
 				║║░░
 				║║╔╗
@@ -526,7 +614,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[50] = new ASCIICharacter('l', """
+		this.ASCIIAlphabet[59] = new ASCIICharacter('l', """
 				╔╗░
 				║║░
 				║║░
@@ -536,17 +624,17 @@ public class Carty extends ASCIIAlphabet {
 				░░░
 				░░░""");
 
-		this.ASCIIAlphabet[51] = new ASCIICharacter('M', """
-				╔═╗╔═╗
-				║║╚╝║║
-				║╔╗╔╗║
-				║║║║║║
-				║║║║║║
-				╚╝╚╝╚╝
-				░░░░░░
-				░░░░░░""");
+		this.ASCIIAlphabet[60] = new ASCIICharacter('m', """
+				░░░░
+				░░░░
+				╔╗╔╗
+				║╚╝║
+				║║║║
+				╚╩╩╝
+				░░░░
+				░░░░""");
 
-		this.ASCIIAlphabet[52] = new ASCIICharacter('n', """
+		this.ASCIIAlphabet[61] = new ASCIICharacter('n', """
 				░░░░
 				░░░░
 				╔═╗░
@@ -556,7 +644,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[53] = new ASCIICharacter('o', """
+		this.ASCIIAlphabet[62] = new ASCIICharacter('o', """
 				░░░░
 				░░░░
 				╔══╗
@@ -566,7 +654,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[54] = new ASCIICharacter('p', """
+		this.ASCIIAlphabet[63] = new ASCIICharacter('p', """
 				░░░░
 				░░░░
 				╔══╗
@@ -577,7 +665,7 @@ public class Carty extends ASCIIAlphabet {
 				╚╝░░
 				""");
 
-		this.ASCIIAlphabet[55] = new ASCIICharacter('q', """
+		this.ASCIIAlphabet[64] = new ASCIICharacter('q', """
 				░░░░
 				░░░░
 				╔══╗
@@ -587,7 +675,7 @@ public class Carty extends ASCIIAlphabet {
 				░░║║
 				░░╚╝""");
 
-		this.ASCIIAlphabet[56] = new ASCIICharacter('r', """
+		this.ASCIIAlphabet[65] = new ASCIICharacter('r', """
 				░░░
 				░░░
 				╔═╗
@@ -597,7 +685,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░
 				░░░""");
 
-		this.ASCIIAlphabet[57] = new ASCIICharacter('s', """
+		this.ASCIIAlphabet[66] = new ASCIICharacter('s', """
 				░░░░
 				░░░░
 				╔══╗
@@ -607,7 +695,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[58] = new ASCIICharacter('t', """
+		this.ASCIIAlphabet[67] = new ASCIICharacter('t', """
 				░╔╗░
 				╔╝╚╗
 				╚╗╔╝
@@ -617,7 +705,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[59] = new ASCIICharacter('u', """
+		this.ASCIIAlphabet[68] = new ASCIICharacter('u', """
 				░░░░
 				░░░░
 				╔╗╔╗
@@ -627,7 +715,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[60] = new ASCIICharacter('v', """
+		this.ASCIIAlphabet[69] = new ASCIICharacter('v', """
 				░░░░
 				░░░░
 				╔╗╔╗
@@ -637,7 +725,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[61] = new ASCIICharacter('w', """
+		this.ASCIIAlphabet[70] = new ASCIICharacter('w', """
 				░░░░░░
 				░░░░░░
 				╔╗╔╗╔╗
@@ -647,7 +735,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[62] = new ASCIICharacter('x', """
+		this.ASCIIAlphabet[71] = new ASCIICharacter('x', """
 				░░░░
 				░░░░
 				╔╗╔╗
@@ -657,7 +745,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░
 				░░░░""");
 
-		this.ASCIIAlphabet[63] = new ASCIICharacter('y', """
+		this.ASCIIAlphabet[72] = new ASCIICharacter('y', """
 				░░░░░
 				░░░░░
 				╔╗─╔╗
@@ -667,7 +755,7 @@ public class Carty extends ASCIIAlphabet {
 				╔═╝║░
 				╚══╝░""");
 
-		this.ASCIIAlphabet[64] = new ASCIICharacter('z', """
+		this.ASCIIAlphabet[73] = new ASCIICharacter('z', """
 				░░░░░
 				░░░░░
 				╔═══╗
@@ -677,7 +765,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░
 				░░░░░""");
 
-		this.ASCIIAlphabet[65] = new ASCIICharacter('Ñ', """
+		this.ASCIIAlphabet[74] = new ASCIICharacter('Ñ', """
 				╔═╗─╔╗
 				║║╚╗║║
 				║╔╗╚╝║
@@ -687,7 +775,7 @@ public class Carty extends ASCIIAlphabet {
 				░░░░░░
 				░░░░░░""");
 
-		this.ASCIIAlphabet[66] = new ASCIICharacter('ñ', """
+		this.ASCIIAlphabet[75] = new ASCIICharacter('ñ', """
 				░░░░
 				░══░
 				╔═╗░
@@ -696,7 +784,10 @@ public class Carty extends ASCIIAlphabet {
 				╚╝╚╝
 				░░░░
 				░░░░""");
-	}
+
+		this.charErr = this.ASCIIAlphabet[1];
+		this.numberOfRows = 8;
+	}// ------------- Finaliza el constructor ------------
 
 	/**
 	 * Combierte el texto enviado en arte ASCII
@@ -704,7 +795,7 @@ public class Carty extends ASCIIAlphabet {
 	 * @version 1.1.0
 	 */
 	@Override
-	public StringBuilder sortASCIISrrays(String Texto) {
+	public StringBuilder sortASCIIArays(String Texto) {
 		String[][] ContainerArrayCharacter = ArrayASCIICharacter(Texto);
 		String[] ArrayLine = new String[this.numberOfRows];
 
@@ -793,6 +884,8 @@ public class Carty extends ASCIIAlphabet {
 					return '╦';
 				} else if (first == '╚') {
 					return '╬';
+				}else if (first == '╠') {
+					return '╬';
 				}
 			} else if (last == '╝') {
 				if (first == '╚') {
@@ -800,6 +893,8 @@ public class Carty extends ASCIIAlphabet {
 				} else if (first == '║') {
 					return '╣';
 				} else if (first == '╔') {
+					return '╬';
+				}else if (first == '╠') {
 					return '╬';
 				}
 			} else if (last == '╣') {
@@ -813,18 +908,16 @@ public class Carty extends ASCIIAlphabet {
 		return '?';
 	}
 
-	/*
-	 * Buscar un caracter en el abecedario en caso de no encontrarlo retornara un
-	 * error y dara por finalizado el programa
+	/**
+	 * Buscar Todos los caracteres de la cadena y crea una matriz donde:
+	 * Cada fila es un caracter que tiene cada una de sus lineas divididas en columnas.
+	 * @param Texto Lista de caracteres que queremos encontrar
+	 * @return Una matriz con todos los caracteres separados por filas.
 	 */
-	private String[][] ArrayASCIICharacter(String Texto) {
+	private String[][] ArrayASCIICharacter(String Texto){
 		String[][] Container = new String[Texto.length()][];
 		for (int i = 0; i < Texto.length(); i++) {
-			try {
-				Container[i] = this.searchCharacter(Texto.charAt(i));
-			} catch (ASCIICharacterNotFound e) {
-				e.printStackTrace();
-			}
+			Container[i] = this.searchCharacter(Texto.charAt(i));
 		}
 		return Container;
 	}

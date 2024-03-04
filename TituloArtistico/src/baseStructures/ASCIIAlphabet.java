@@ -11,8 +11,9 @@ package baseStructures;
  */
 public abstract class ASCIIAlphabet {
 
-	protected ASCIICharacter[] ASCIIAlphabet;
-	protected int numberOfRows;
+	protected ASCIICharacter[] ASCIIAlphabet;   //Abecedario
+	protected int numberOfRows;                 //Numero de lineas global de cada caracter de la fuente
+	protected ASCIICharacter charErr;           //caracter que se usara cuando no se encuentre el solocitado.
 
 	/**
 	 * Busca un caracter en el abecedario.
@@ -20,7 +21,7 @@ public abstract class ASCIIAlphabet {
 	 * @return Retorna el ASCIICharaster correspondiente al parametro enviado.
 	 * @throws ASCIICharacterNotFound En caso de que no encuentre el caracter.
 	 */
-	protected String[] searchCharacter(char character) throws ASCIICharacterNotFound {
+	protected String[] searchCharacter(char character){
 		return BusquedaBinaria(0, this.ASCIIAlphabet.length - 1, (int) character);
 	}
 
@@ -32,10 +33,9 @@ public abstract class ASCIIAlphabet {
 	 * @return Retorna el elemento encontrado de lo contrario retorna:
 	 * @throws ASCIICharacterNotFound 
 	 */
-	private String[] BusquedaBinaria(int Start, int end, int characterSearch) throws ASCIICharacterNotFound {
+	private String[] BusquedaBinaria(int Start, int end, int characterSearch){
 		if (Start > end)
-			throw new ASCIICharacterNotFound(
-					String.format("El Caracter %s no se encuentra en el abecedario", characterSearch));
+			return this.charErr.ASCIIArtStringArray();	
 
 		int mid = (int) ((Start + end) / 2);
 		int target = this.ASCIIAlphabet[mid].getCharacter();
@@ -46,7 +46,6 @@ public abstract class ASCIIAlphabet {
 			return BusquedaBinaria(mid + 1, end, characterSearch);
 		else
 			return BusquedaBinaria(Start, mid - 1, characterSearch);
-
 	}
 
 	/**
@@ -55,14 +54,10 @@ public abstract class ASCIIAlphabet {
 	 * @param Texto Palabra/s que queremos en desglozar.
 	 * @return Retorna Retorna el texto enviado en formato ASCII de forma Horizontal.
 	 */
-	public StringBuilder sortASCIISrrays(String Texto){
+	public StringBuilder sortASCIIArays(String Texto){
 		String[][] ArrayCharacter = new String[Texto.length()][];
 		for (int i = 0; i < Texto.length(); i++) {
-			try {
-				ArrayCharacter[i] = searchCharacter(Texto.charAt(i));
-			} catch (ASCIICharacterNotFound e) {
-				e.printStackTrace();
-			}
+			ArrayCharacter[i] = searchCharacter(Texto.charAt(i));
 		}
 
 		StringBuilder Container = new StringBuilder("```\n");

@@ -19,7 +19,7 @@ public class ProgramExecution {
 	//--------------- Constructor ------------
 	public ProgramExecution(String proyecName, ListAlphabets opcion) {
 		abc = opcion.getAbecedario();
-		txt = abc.sortASCIISrrays(proyecName);
+		txt = abc.sortASCIIArays(proyecName);
 	}
 
 	/**

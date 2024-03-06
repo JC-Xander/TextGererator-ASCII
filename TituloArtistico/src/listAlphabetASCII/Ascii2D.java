@@ -6,8 +6,9 @@ import baseStructures.ASCIIAlphabet;
 /**
  * Abecesario ASCII Con estilo 2D.(Solo Contiene mayusculas)
  * 
- * @version 1.0.0
- * @since 24/02/22
+ * @version 1.1.0
+ * @author JC-Xander
+ * @since 24/03/05
  * @date 24/02/27
  */
 public class Ascii2D extends ASCIIAlphabet {

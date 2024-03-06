@@ -4,6 +4,7 @@ package baseStructures;
  * Conjunto de {@link ASCIICharacter} que en conjunto conforma un alfabeto el cual esta odenado
  * siguiendo la numerocion de los simbolos ASCII en forma ASCEDENTE par poder realizar una busqueda
  * binaria.
+ * 
  * @author J-Xander
  * @version 1.0.0
  * @since 24/02/22

@@ -5,10 +5,9 @@ import baseStructures.ASCIIAlphabet;
 
 /**
  * Avecedario ASCII con estilo 3D
- * 
- * @author J-Xander
- * @version 1.0.0
- * @since 2024/02/10
+ * @author JC-Xander
+ * @version 1.1.0
+ * @since 2024/03/05
  * @date 2024/02/27
  */
 public class Ascii3D extends ASCIIAlphabet {

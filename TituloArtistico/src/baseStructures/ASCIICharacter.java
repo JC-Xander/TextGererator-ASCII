@@ -1,6 +1,7 @@
 package baseStructures;
 /**
  * Clase Base la cual se encarga de almacenar el modelo Ascii junto al caracter al que representa en el abecedario.
+ * 
  * @author J-Xander.
  * @version 1.1.0
  * @since 2024/02/23

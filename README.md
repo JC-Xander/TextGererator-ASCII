@@ -8,8 +8,8 @@
 ```
 
 @author: JC-Xander<br>
-@version: 1.1.0<br>
-@since:  2024/03/04<br>
+@version: 1.2.0<br>
+@since:  2024/03/05<br>
 @date: 2024/02/1
 
 # ¿Qué es?

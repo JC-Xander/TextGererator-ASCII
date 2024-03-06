@@ -4,7 +4,12 @@ import baseStructures.ASCIIAlphabet;
 import listAlphabetASCII.*;
 
 /**
- * Enum el cual permite inicializar un tipo de abecedario mediante la variable establecida.
+ * Permite inicializar un tipo de abecedario mediante el enum creado.
+ * 
+ * @version 1.0.0
+ * @author JC-Xander
+ * @since 2024/02/10
+ * @date 2024/02/20
  */
 enum ListAlphabets{
 	A3D(new Ascii3D()),   // Abecedario con estilo 3D.

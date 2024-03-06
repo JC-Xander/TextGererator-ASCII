@@ -17,13 +17,19 @@ public class ProgramExecution {
 	public ASCIIAlphabet abc;
 
 	//--------------- Constructor ------------
+	/**
+	 * Crea una nueva instancia Program la cual resive el texto que queremos convertir y la fuente
+	 * luego lo almacenara en la variable txt la cual podremos imprimir.
+	 * @param proyecName Cadena que queremos convertir.
+	 * @param opcion enum ListAlphabets con la fuente.
+	 */
 	public ProgramExecution(String proyecName, ListAlphabets opcion) {
 		abc = opcion.getAbecedario();
 		txt = abc.sortASCIIArays(proyecName);
 	}
 
 	/**
-	 * Devuelve Una cadena con el TextoASCII.
+	 * Devuelve la cadena con el TextoASCII.
 	 */
 	@Override
 	public String toString() {
@@ -67,5 +73,5 @@ public class ProgramExecution {
 			}
 		}
 		System.out.println(readme);
-	}
-}
+	}//------------ Finaliza el MAIN -------------
+}//------------ Finaliza la clase ProgramExecition --------------

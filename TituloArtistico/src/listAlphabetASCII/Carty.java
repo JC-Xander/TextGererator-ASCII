@@ -7,8 +7,8 @@ import baseStructures.ASCIIAlphabet;
  * Abecedario con el stylo Carty modelos ASCII optenidos de
  * https://fsymbols.com/es/generadores/carty
  * 
- * @author j-Xander
- * @version 1.0.0
+ * @author JC-Xander
+ * @version 1.2.0
  * @since 2024/02/24
  * @date 2024/02/23
  */

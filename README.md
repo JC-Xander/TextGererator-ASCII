@@ -49,18 +49,37 @@ TextGenerator permite crear Texto Gigante ASCII mediante el envio de una cadena 
 
     Nota: En caso de enviar un caracter no valido por ejemplo ';', este sera sustitiudo por un espacio.
 
+    ```
+        ╭━━━╮╭━━━╮╭━━━━╮╭━━━╮╭━━━╮╭━━━╮╭━━╮╭━━╮╱╭━━━╮╭━━━╮╱
+        ┃╭━╮┃┃╭━╮┃┃╭╮╭╮┃┃╭━╮┃┃╭━╮┃┃╭━╮┃╰┫┣╯╰┫┣╯╱┃╭━╮┃╰╮╭╮┃╱
+        ┃┃╱┃┃┃╰━╯┃╰╯┃┃╰╯┃┃╱┃┃┃╰━━╮┃┃╱╰╯╱┃┃╱╱┃┃╱╱╰╯╭╯┃╱┃┃┃┃╱
+        ┃╰━╯┃┃╭╮╭╯╱╱┃┃╱╱┃╰━╯┃╰━━╮┃┃┃╱╭╮╱┃┃╱╱┃┃╱╱╭━╯╭╯╱┃┃┃┃╱
+        ┃╭━╮┃┃┃┃╰╮╱╱┃┃╱╱┃╭━╮┃┃╰━╯┃┃╰━╯┃╭┫┣╮╭┫┣╮╱┃┃╰━╮╭╯╰╯┃╱
+        ╰╯╱╰╯╰╯╰━╯╱╱╰╯╱╱╰╯╱╰╯╰━━━╯╰━━━╯╰━━╯╰━━╯╱╰━━━╯╰━━━╯╱
+    ```
+
 - __Carty:__ Ofrese un estilo de Letras de Tipo Carty
-    Este estilo se desarrollo anteriormente en el repositorio Carty, en el cual esncontrara toda la información hacerca de esta fuente.
+    Este estilo se desarrollo anteriormente en el repositorio Carty, en el cual esncontraras toda la información hacerca de esta fuente.
 
-    Pero se le realizarón modificaciones para que se adaptara a la estructura de las fuentes aparte se estructuraron los metodos de una forma mas segmentada para que fuera mas facil su interpretación.
+    Pero se le realizarón modificaciones para que se adaptara a la estructura de las fuentes, aparte se estructuraron los metodos de una forma mas segmentada para que fuera mas facil su interpretación.
 
-Nota: Este programa recibe tanto la cadenada de caracateres como el tipo de fuente desde el argumento ya que esta pensado que se ejecute como si fuera un comando de terminal.
-
+    ```
+        ╔═══╗──╔╗╔═══╦═══╦═══╦══╦══╗─╔═╦═══╦═══╦═╗
+        ║╔═╗║─╔╝╚╣╔═╗║╔═╗║╔═╗╠╣╠╩╣╠╝╔╝╔╣╔═╗╠╗╔╗╠╗╚╗
+        ║║─║╠═╬╗╔╣║─║║╚══╣║─╚╝║║─║║╔╝╔╝╚╝╔╝║║║║║╚╗╚╗
+        ║╚═╝║╔╝║║║╚═╝╠══╗║║─╔╗║║─║║║║║─╔═╝╔╝║║║║─║║║
+        ║╔═╗║║─║╚╣╔═╗║╚═╝║╚═╝╠╣╠╦╣╠╣║║─║║╚═╦╝╚╝║─║║║
+        ╚╝─╚╩╝─╚═╩╝─╚╩═══╩═══╩══╩══╩╗╚╗╚═══╩═══╝╔╝╔╝
+        ────────────────────────────╚╗╚╗───────╔╝╔╝
+        ─────────────────────────────╚═╝───────╚═╝
+    ```
 ## Analisis
-TextGenerator crea un objeto el cual se encarga de almacenar el Arte ASCII correspondiente al caracter de cada lenguaje luego se creo una clase abstracta la cual contiene los metodos de busqueda y unio de los caracateres y esto solo se le hereda a la fuente en la cual solo deberemos de editas los caracteres del abecesario.
+TextGenerator crea un objeto el cual se encarga de almacenar el Arte ASCII correspondiente al caracter de cada lenguaje luego se creo una clase abstracta la cual contiene los metodos de busqueda y unión de los caracateres y esto esto se le hereda a la fuente en la cual solo deberemos de editar crear el metodo constructor inicializando todos los caracteres ascii en el arreglo alphabeto.
 
 En algunos casos los metodos de union de los caracteres necesitara mas detalles como en el caso de la fuente carty por lo que se sobreescribieron algunos de los metrodos heredados.
 
 Para establecer el tipo de fuente se creo un enum el cual contiene variables que simbolizan canda una de las fuentes por lo que al envialas le estamos diciendo al contructor que fuente queremos en especifico.
 
 Espero ir añadiendo mas fuentes a medida pasa el tiempo de momento estas 3 es un comienzo.
+
+Nota: Este programa recibe tanto la cadenada de caracateres como el tipo de fuente desde el argumento ya que esta pensado que se ejecute como si fuera un comando de terminal.

@@ -831,7 +831,7 @@ public class Carty extends ASCIIAlphabet {
 	 *         y saltos de linea innecesarios.
 	 */
 	private StringBuilder removeSpaces(String[] letters) {
-		StringBuilder Container = new StringBuilder("```\n");
+		StringBuilder Container = new StringBuilder();
 
 		for (int i = 0; i < letters.length; i++) {
 			String Linea = letters[i];
@@ -852,7 +852,6 @@ public class Carty extends ASCIIAlphabet {
 			if (bandera)
 				Container.append("\n");
 		}
-		Container.append("```\n");
 
 		return Container;
 	}

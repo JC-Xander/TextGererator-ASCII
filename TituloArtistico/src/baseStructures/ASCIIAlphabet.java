@@ -61,7 +61,7 @@ public abstract class ASCIIAlphabet {
 			ArrayCharacter[i] = searchCharacter(Texto.charAt(i));
 		}
 
-		StringBuilder Container = new StringBuilder("```\n");
+		StringBuilder Container = new StringBuilder();
 
 		for (int i = 0; i < this.numberOfRows; i++) {
 			for (int j = 0; j < Texto.length(); j++) {
@@ -69,7 +69,6 @@ public abstract class ASCIIAlphabet {
 			}
 			Container.append("\n");
 		}
-		Container.append("```\n");
 
 		return Container;
 	}

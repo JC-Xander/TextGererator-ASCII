@@ -64,14 +64,14 @@ TextGenerator permite crear Texto Gigante ASCII mediante el envio de una cadena 
     Pero se le realizarón modificaciones para que se adaptara a la estructura de las fuentes, aparte se estructuraron los metodos de una forma mas segmentada para que fuera mas facil su interpretación.
 
     ```
-        ╔═══╗──╔╗╔═══╦═══╦═══╦══╦══╗─╔═╦═══╦═══╦═╗
-        ║╔═╗║─╔╝╚╣╔═╗║╔═╗║╔═╗╠╣╠╩╣╠╝╔╝╔╣╔═╗╠╗╔╗╠╗╚╗
-        ║║─║╠═╬╗╔╣║─║║╚══╣║─╚╝║║─║║╔╝╔╝╚╝╔╝║║║║║╚╗╚╗
-        ║╚═╝║╔╝║║║╚═╝╠══╗║║─╔╗║║─║║║║║─╔═╝╔╝║║║║─║║║
-        ║╔═╗║║─║╚╣╔═╗║╚═╝║╚═╝╠╣╠╦╣╠╣║║─║║╚═╦╝╚╝║─║║║
-        ╚╝─╚╩╝─╚═╩╝─╚╩═══╩═══╩══╩══╩╗╚╗╚═══╩═══╝╔╝╔╝
-        ────────────────────────────╚╗╚╗───────╔╝╔╝
-        ─────────────────────────────╚═╝───────╚═╝
+        ╔═══╗──╔╗╔═══╦═══╦═══╦══╦══╗─╔═╦═══╗─────╔╗────╔═╗
+        ║╔═╗║─╔╝╚╣╔═╗║╔═╗║╔═╗╠╣╠╩╣╠╝╔╝╔╣╔═╗║────╔╝╚╗───╚╗╚╗
+        ║║─║╠═╬╗╔╣║─║║╚══╣║─╚╝║║─║║╔╝╔╝║║─╚╬══╦═╬╗╔╬╗─╔╗╚╗╚╗
+        ║╚═╝║╔╝║║║╚═╝╠══╗║║─╔╗║║─║║║║║─║║─╔╣╔╗║╔╝║║║║─║║─║║║
+        ║╔═╗║║─║╚╣╔═╗║╚═╝║╚═╝╠╣╠╦╣╠╣║║─║╚═╝║╔╗║║─║╚╣╚═╝║─║║║
+        ╚╝─╚╩╝─╚═╩╝─╚╩═══╩═══╩══╩══╩╗╚╗╚═══╩╝╚╩╝─╚═╩═╗╔╝╔╝╔╝
+        ────────────────────────────╚╗╚╗───────────╔═╝║╔╝╔╝
+        ─────────────────────────────╚═╝───────────╚══╝╚═╝
     ```
 ## Analisis
 TextGenerator crea un objeto el cual se encarga de almacenar el Arte ASCII correspondiente al caracter de cada lenguaje luego se creo una clase abstracta la cual contiene los metodos de busqueda y unión de los caracateres y esto esto se le hereda a la fuente en la cual solo deberemos de editar crear el metodo constructor inicializando todos los caracteres ascii en el arreglo alphabeto.
